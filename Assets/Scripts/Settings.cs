@@ -33,8 +33,7 @@ public class Settings : MonoBehaviour {
         
         /* level 0:16, 1:32, 2:48, 3:64, 4:80, 5:100 */
         Debug.Log("Starting Value: " + QualitySettings.GetQualityLevel());
-        qualitySlider.value = ((QualitySettings.GetQualityLevel()+1) * 16)/100f;
-        qualitySlider.value = qualityTag(qualitySlider.value);
+        qualitySlider.value = QualitySettings.GetQualityLevel() * 100;
         Debug.Log("Slider Value: " + qualitySlider.value);
         qualityValue.text = "" + qualityTag(qualitySlider.value) + "%";
         qualitySlider.onValueChanged.AddListener(delegate { updateQuality(); });
@@ -65,44 +64,31 @@ public class Settings : MonoBehaviour {
         int newLevel = 0;
         if (temp > 80)
         {
-            qualitySlider.value = 1f;
-            temp = 100;
             newLevel = 5;
         }
         else if (temp > 64)
         {
-            qualitySlider.value = 0.8f;
-            temp = 80;
             newLevel = 4;
         }
         else if (temp > 48)
         {
-            qualitySlider.value = 0.64f;
-            temp = 64;
             newLevel = 3;
         }
         else if (temp > 32)
         {
-            qualitySlider.value = 0.48f;
-            temp = 48;
             newLevel = 2;
         }
         else if (temp > 16)
         {
-            qualitySlider.value = 0.32f;
-            temp = 32;
             newLevel = 1;
         }
         else
         {
-            qualitySlider.value = 0.16f;
-            temp = 16;
             newLevel = 0;
         }
         qualityValue.text = "" + temp + "%";
-        QualitySettings.SetQualityLevel(newLevel, true);
-        //Debug.Log("Current Level Value: " + QualitySettings.GetQualityLevel());
-        //Debug.Log("_______Slider Value: " + qualitySlider.value);
+        QualitySettings.SetQualityLevel(newLevel);
+        Debug.Log("New Quality Value: " + QualitySettings.GetQualityLevel());
     }
 
     int qualityTag(float input)
@@ -146,6 +132,24 @@ public class Settings : MonoBehaviour {
                 return true;
         }
         return false;
+    }
+
+    public void defaultSettings()
+    {
+        qualitySlider.value = 1f;
+        qualityValue.text = "100%";
+        QualitySettings.SetQualityLevel(5);
+
+        resList.value = resList.options.Count;
+        Screen.SetResolution(resolutions[resList.value].width, resolutions[resList.value].height, true);
+        currentRes.text = resList.options[resList.value].text;
+
+        volumeSlider.value = 1f;
+        volumeValue.text = "100%";
+        AudioListener.volume = 1f;
+
+        brightnessSlider.value = 1f;
+        brightnessValue.text = "100%";
     }
 
     public void Back2Menu()
