@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Plugins.meta
 guid: 495286d54eeeaa14db6a0a597a3e17cb
 folderAsset: yes
 timeCreated: 1495271799
+=======
+guid: dc2bb2e9cc3384d4fa8aa52858fa7b40
+folderAsset: yes
+timeCreated: 1495272174
+>>>>>>> master:Assets/Prefabs.meta
 licenseType: Free
 DefaultImporter:
   userData: 
