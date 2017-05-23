@@ -32,9 +32,9 @@ public class Settings : MonoBehaviour {
         resList.onValueChanged.AddListener(delegate { updateResolution(); });
         
         /* level 0:16, 1:32, 2:48, 3:64, 4:80, 5:100 */
-        Debug.Log("Starting Value: " + QualitySettings.GetQualityLevel());
+        //Debug.Log("Starting Value: " + QualitySettings.GetQualityLevel());
         qualitySlider.value = QualitySettings.GetQualityLevel() * 100;
-        Debug.Log("Slider Value: " + qualitySlider.value);
+        //Debug.Log("Slider Value: " + qualitySlider.value);
         qualityValue.text = "" + qualityTag(qualitySlider.value) + "%";
         qualitySlider.onValueChanged.AddListener(delegate { updateQuality(); });
 
@@ -55,7 +55,7 @@ public class Settings : MonoBehaviour {
     {
         Screen.SetResolution(resolutions[resList.value].width, resolutions[resList.value].height, true);
         currentRes.text = resList.options[resList.value].text;
-        Debug.Log("resList value: " + resList.value);
+        //Debug.Log("resList value: " + resList.value);
     }
 
     void updateQuality()
@@ -88,7 +88,7 @@ public class Settings : MonoBehaviour {
         }
         qualityValue.text = "" + temp + "%";
         QualitySettings.SetQualityLevel(newLevel);
-        Debug.Log("New Quality Value: " + QualitySettings.GetQualityLevel());
+        //Debug.Log("New Quality Value: " + QualitySettings.GetQualityLevel());
     }
 
     int qualityTag(float input)
