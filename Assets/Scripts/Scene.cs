@@ -11,31 +11,30 @@ public class Scene : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        GameObject a;
         //Horizantal floor
         for(int j = 0; j < numOfRow; j++)
         {
             for (int i = 0; i < blockPerRow; i++)
             {
                 Vector3 pos = new Vector3(i * blockSize, j* blockSize, 0);
-                a = Instantiate(sceneFabs, pos, Quaternion.identity);
+                Instantiate(sceneFabs, pos, Quaternion.identity);
             }
         }
         //Stair 
         for (int i = 10; i < 20; i++)
         {
             Vector3 pos = new Vector3(i * blockSize, 2 * blockSize, 0);
-            a = Instantiate(sceneFabs, pos, Quaternion.identity);
+            Instantiate(sceneFabs, pos, Quaternion.identity);
         }
         for (int i = 12; i < 18; i++)
         {
             Vector3 pos = new Vector3(i * blockSize, 3 * blockSize, 0);
-            a = Instantiate(sceneFabs, pos, Quaternion.identity);
+            Instantiate(sceneFabs, pos, Quaternion.identity);
         }
         for (int i = 14; i < 16; i++)
         {
             Vector3 pos = new Vector3(i * blockSize, 4 * blockSize, 0);
-            a = Instantiate(sceneFabs, pos, Quaternion.identity);
+            Instantiate(sceneFabs, pos, Quaternion.identity);
         }
 
 
