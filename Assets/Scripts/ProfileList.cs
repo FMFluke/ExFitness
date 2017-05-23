@@ -23,7 +23,7 @@ public class ProfileList : MonoBehaviour {
         panelRT.sizeDelta = new Vector2(panelRT.sizeDelta.x, profileCount*(profilePanelHeight)+20);
         for (int i=0;i<profileCount;i++)
         {
-            Vector3 pos = new Vector3(startX+profilePanelWidth/2, startY - ((i + 1) * profilePanelHeight + (profilePanelHeight * 0.2f)), 1);
+            Vector3 pos = new Vector3(startX + (profilePanelWidth*2.4f / 8f), startY - ((i + 1) * profilePanelHeight + (profilePanelHeight * 0.2f)), 1);
             a = Instantiate(profileFabs, pos, Quaternion.identity);
             a.transform.SetParent(panel.transform, false);
             name = a.transform.Find("Name");
