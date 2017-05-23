@@ -12,7 +12,7 @@ public class DB : MonoBehaviour {
     private List<HighScore> highScores = new List<HighScore>();
     public GameObject scoreprefab;
     public Transform scoreParent;
-    public int HighscoreRank;
+
 	// Use this for initialization
 	void Start () {
         connectionString = "URI=file:" + Application.dataPath + "/Exfitness.sqlite";
@@ -43,13 +43,12 @@ public class DB : MonoBehaviour {
                     reader.Close();
                 }
             }
-            highScores.Sort();
         }
     }
     private void ShowScores()
     {
         Getscore();
-        for(int i=0; i<HighscoreRank;i++)
+        for(int i=0; i<highScores.Count ;i++)
         {
             GameObject tmpObjec = Instantiate(scoreprefab);
             HighScore tmpScore = highScores[i];

@@ -4,7 +4,7 @@ using UnityEngine;
 using System;
 using UnityEngine.SceneManagement;
 
-class HighScore:IComparable<HighScore> {
+class HighScore  {
     public int Score { get; set; }
     public string Name { get; set; }
     public DateTime Date { get; set; }
@@ -14,16 +14,5 @@ class HighScore:IComparable<HighScore> {
         this.Score = score;
         this.ID = id;
         this.Name = name;
-    }
-
-    public int CompareTo(HighScore other)
-    {
-        if (other.Score < this.Score)
-            return -1;
-        else if (other.Score > this.Score)
-            return 1;
-        else
-            return 0;
-        //throw new NotImplementedException();
     }
 }
