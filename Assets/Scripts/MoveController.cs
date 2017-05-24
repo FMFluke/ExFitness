@@ -5,7 +5,7 @@ using System.Collections;
 
 public abstract class MoveController : MonoBehaviour
 {
-	public float moveTime = 0.01f;           //Time it will take object to move, in seconds.
+	public float moveTime;           		//Time it will take object to move, in seconds. You NEED to set it with inspector or in code later.
 	public LayerMask blockingLayer;         //Layer on which collision will be checked.
 
 

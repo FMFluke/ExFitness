@@ -13,9 +13,11 @@ public class PlayerScript : MoveController
 	//Start overrides the Start function
 	protected override void Start ()
 	{
+		//Set movespeed for player
+		moveTime = 0.01f;
 		//Get a component reference to the Player's animator component
 		animator = GetComponent<Animator>();
-
+		//Get a component reference to the Player's SpriteRenderer
 		sprite = GetComponent<SpriteRenderer>();
 		//Call the Start function of the base class.
 		base.Start ();
