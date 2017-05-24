@@ -34,7 +34,8 @@ public class PlayerScript : MoveController
 		vertical = (int) (Input.GetAxisRaw ("Vertical"));
 		if (horizontal == 0 && vertical == 0) {
 			animator.SetBool ("PlayerWalk", false);
-		}
+            animator.SetBool("PlayerJump", false);
+        }
 		//prevent vertical from being lower than 0 (can't move down by yourself without gravity)
 		if (vertical < 0) {
 			vertical = 0;
@@ -52,6 +53,13 @@ public class PlayerScript : MoveController
 			//move
 			base.Move (horizontal, vertical);
 		}
+        //jump
+        if(vertical > 0)
+        {
+            animator.SetBool("PlayerJump", true);
+            //move
+            base.Move(horizontal, vertical);
+        }
 	}
 	
 }
