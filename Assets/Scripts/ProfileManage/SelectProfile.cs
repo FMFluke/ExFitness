@@ -19,4 +19,12 @@ public class SelectProfile : MonoBehaviour {
     {
         SceneManager.LoadScene("mainMenu");
     }
+    public void go2AddProfile()
+    {
+        SceneManager.LoadScene("Addprofile");
+    }
+    public void Back2SelectProfile()
+    {
+        SceneManager.LoadScene("selectProfile");
+    }
 }
