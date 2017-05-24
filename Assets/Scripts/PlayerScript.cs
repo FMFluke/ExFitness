@@ -7,14 +7,13 @@ public class PlayerScript : MoveController
 {
 	private Animator animator;                //Used to store a reference to the Player's animator component.
 	private int hp;                           //Used to store player hp
-	public int hspeed;                         //How many pixels it can move per second, horizontally
+	//public int hspeed;                        //How many pixels it can move per second, horizontally
 
 	//Start overrides the Start function
 	protected override void Start ()
 	{
 		//Get a component reference to the Player's animator component
 		animator = GetComponent<Animator>();
-
 		//Call the Start function of the base class.
 		base.Start ();
 	}
@@ -28,14 +27,16 @@ public class PlayerScript : MoveController
 		//Get input from the input manager
 		horizontal = (int) (Input.GetAxisRaw ("Horizontal"));
 		vertical = (int) (Input.GetAxisRaw ("Vertical"));
-
+		if (horizontal == 0 && vertical == 0) {
+			animator.SetBool ("PlayerWalk", false);
+		}
 		//Check if walking horizontally
 		if(horizontal != 0 && vertical == 0)
 		{
 			//set animation.
-
+			animator.SetBool("PlayerWalk",true);
 			//move
-			base.Move (horizontal*hspeed, vertical);
+			base.Move (horizontal, vertical);
 		}
 	}
 	
