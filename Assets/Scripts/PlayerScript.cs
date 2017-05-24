@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;      //Allows us to use SceneManager
 public class PlayerScript : MoveController
 {
 	private Animator animator;                //Used to store a reference to the Player's animator component.
+	private SpriteRenderer sprite;
 	private int hp;                           //Used to store player hp
 	//public int hspeed;                        //How many pixels it can move per second, horizontally
 
@@ -14,6 +15,8 @@ public class PlayerScript : MoveController
 	{
 		//Get a component reference to the Player's animator component
 		animator = GetComponent<Animator>();
+
+		sprite = GetComponent<SpriteRenderer>();
 		//Call the Start function of the base class.
 		base.Start ();
 	}
@@ -30,10 +33,19 @@ public class PlayerScript : MoveController
 		if (horizontal == 0 && vertical == 0) {
 			animator.SetBool ("PlayerWalk", false);
 		}
+		//prevent vertical from being lower than 0 (can't move down by yourself without gravity)
+		if (vertical < 0) {
+			vertical = 0;
+		}
 		//Check if walking horizontally
 		if(horizontal != 0 && vertical == 0)
 		{
 			//set animation.
+			if (horizontal >= 0) {
+				sprite.flipX = false;
+			} else {
+				sprite.flipX = true;
+			}
 			animator.SetBool("PlayerWalk",true);
 			//move
 			base.Move (horizontal, vertical);

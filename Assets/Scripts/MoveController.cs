@@ -47,9 +47,10 @@ public abstract class MoveController : MonoBehaviour
 	{
 		Vector2 start = transform.position;
 		Vector2 end = start + new Vector2 (xDir, yDir);
+		Vector2 endcast = start + new Vector2 (0.5f*xDir*boxCollider.size.x + xDir, 0.5f*yDir*boxCollider.size.y + yDir);
 		RaycastHit2D hit;
 		//Check if anything was hit
-		if(!CheckCollide(start, end, out hit)) //If no collision occurs
+		if(!CheckCollide(start, endcast, out hit)) //If no collision will occurs
 		{
 			//If nothing was hit, start moving
 			//StartCoroutine (SmoothMovement (end));
