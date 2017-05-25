@@ -28,7 +28,6 @@ public class ProfileList : MonoBehaviour {
         using (IDbConnection dbConnection = new SqliteConnection(connectionString))
         {
             dbConnection.Open();
-            dbPath.text = connectionString + "_" + dbConnection.State;
             using (IDbCommand cmd = dbConnection.CreateCommand())
             {
                 string sqlQuery = "SELECT ID,NAME,WEIGHT,HEIGHT,GENDER FROM PLAYER";
