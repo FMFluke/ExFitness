@@ -10,8 +10,9 @@ public class ProfileList : MonoBehaviour {
     public Transform panel;
     public float profilePanelWidth = 336;
     public float profilePanelHeight = 86;
-    private int profileCount = 10;
+    private int profileCount = 1;
     private string connectionString;
+    public Text dbPath;
     //private List<Profile> profList;
 
     // Use this for initialization
@@ -21,13 +22,14 @@ public class ProfileList : MonoBehaviour {
         RectTransform panelRT = panel.GetComponent<RectTransform>();
         Transform name;
         Text temp;
-        //profList = new List<Profile>();
         profileCount = 1;
 
         connectionString = "URI=file:" + Application.dataPath + "/Exfitness.sqlite";
+        
         using (IDbConnection dbConnection = new SqliteConnection(connectionString))
         {
             dbConnection.Open();
+            dbPath.text = connectionString + "_" + dbConnection.State;
             using (IDbCommand cmd = dbConnection.CreateCommand())
             {
                 string sqlQuery = "SELECT ID,NAME,WEIGHT,HEIGHT,GENDER FROM PLAYER";
@@ -65,7 +67,7 @@ public class ProfileList : MonoBehaviour {
                 }
             }
         }
-
+        
         //panelRT.sizeDelta = new Vector2(panelRT.sizeDelta.x, profileCount*(profilePanelHeight)+20);
         //for (int i=0;i<profileCount;i++)
         //{
@@ -79,10 +81,10 @@ public class ProfileList : MonoBehaviour {
         //    profileCount++;
         //    //Debug.Log("" + (i));
         //}
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    }
+
+    // Update is called once per frame
+    void Update () {
 		
 	}
 }
