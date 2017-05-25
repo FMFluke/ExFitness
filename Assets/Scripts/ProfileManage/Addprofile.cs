@@ -1,11 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using Mono.Data.Sqlite;
 using System.Data;
 using System;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Addprofile : MonoBehaviour {
     public Text EnterWeight;
@@ -33,5 +33,6 @@ public class Addprofile : MonoBehaviour {
         int Weight = int.Parse(EnterWeight.text);
         int Height = int.Parse(EnterHeight.text);
         InsertProfile(EnterName.text, Weight, Height, EnterGender.text);
+        SceneManager.LoadScene("selectProfile");
     }
 }

@@ -12,7 +12,7 @@ public class ProfileList : MonoBehaviour {
     public float profilePanelHeight = 86;
     private int profileCount = 10;
     private string connectionString;
-    private List<Profile> profList;
+    //private List<Profile> profList;
 
     // Use this for initialization
     void Start () {
@@ -21,7 +21,7 @@ public class ProfileList : MonoBehaviour {
         RectTransform panelRT = panel.GetComponent<RectTransform>();
         Transform name;
         Text temp;
-        profList = new List<Profile>();
+        //profList = new List<Profile>();
         profileCount = 1;
 
         connectionString = "URI=file:" + Application.dataPath + "/Exfitness.sqlite";

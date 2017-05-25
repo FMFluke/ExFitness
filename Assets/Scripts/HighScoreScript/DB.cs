@@ -38,7 +38,7 @@ public class DB : MonoBehaviour {
                 {
                     while (reader.Read())
                     {
-                        highScores.Add(new HighScore(reader.GetInt32(0),reader.GetString(1),reader.GetInt32(2)));
+                        highScores.Add(new HighScore(reader.GetInt32(0), reader.GetString(1), reader.GetInt32(2)));
                     }
                     dbConnection.Close();
                     reader.Close();
