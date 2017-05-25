@@ -16,7 +16,7 @@ public class DB : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        connectionString = "URI=file:" + Application.dataPath + "/Exfitness.sqlite";
+        connectionString = "URI=file:" + Application.dataPath + "/StreamingAssets/Exfitness.sqlite";
         ShowScores();
     }
 	

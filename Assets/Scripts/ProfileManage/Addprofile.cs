@@ -15,7 +15,7 @@ public class Addprofile : MonoBehaviour {
     private string connectionString;
     public void InsertProfile(string name,int weight,int height,string gender)
     {
-        connectionString = "URI=file:" + Application.dataPath + "/Exfitness.sqlite";
+        connectionString = "URI=file:" + Application.dataPath + "/StreamingAssets/Exfitness.sqlite";
         using (IDbConnection dbConnection = new SqliteConnection(connectionString))
         {
             dbConnection.Open();

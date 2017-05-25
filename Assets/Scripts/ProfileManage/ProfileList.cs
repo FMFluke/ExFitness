@@ -24,7 +24,7 @@ public class ProfileList : MonoBehaviour {
         //profList = new List<Profile>();
         profileCount = 1;
 
-        connectionString = "URI=file:" + Application.dataPath + "/Exfitness.sqlite";
+        connectionString = "URI=file:" + Application.dataPath + "/StreamingAssets/Exfitness.sqlite";
         using (IDbConnection dbConnection = new SqliteConnection(connectionString))
         {
             dbConnection.Open();
