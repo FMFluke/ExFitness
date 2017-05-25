@@ -1,0 +1,150 @@
+Initialize engine version: 5.6.1f1 (2860b30f0b54)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 960M (ID=0x139b)
+    Vendor:   NVIDIA
+    VRAM:     4062 MB
+    Driver:   21.21.13.7682
+Begin MonoManager ReloadAssembly
+Platform assembly: G:\3'rd Year\Semester 2\Software Engineering\Project\Proj\ExFitness_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading G:\3'rd Year\Semester 2\Software Engineering\Project\Proj\ExFitness_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: G:\3'rd Year\Semester 2\Software Engineering\Project\Proj\ExFitness_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading G:\3'rd Year\Semester 2\Software Engineering\Project\Proj\ExFitness_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: G:\3'rd Year\Semester 2\Software Engineering\Project\Proj\ExFitness_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading G:\3'rd Year\Semester 2\Software Engineering\Project\Proj\ExFitness_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: G:\3'rd Year\Semester 2\Software Engineering\Project\Proj\ExFitness_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading G:\3'rd Year\Semester 2\Software Engineering\Project\Proj\ExFitness_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: G:\3'rd Year\Semester 2\Software Engineering\Project\Proj\ExFitness_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading G:\3'rd Year\Semester 2\Software Engineering\Project\Proj\ExFitness_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+Platform assembly: G:\3'rd Year\Semester 2\Software Engineering\Project\Proj\ExFitness_Data\Managed\Mono.Data.Sqlite.dll (this message is harmless)
+Loading G:\3'rd Year\Semester 2\Software Engineering\Project\Proj\ExFitness_Data\Managed\Mono.Data.Sqlite.dll into Unity Child Domain
+Platform assembly: G:\3'rd Year\Semester 2\Software Engineering\Project\Proj\ExFitness_Data\Managed\System.Data.dll (this message is harmless)
+Loading G:\3'rd Year\Semester 2\Software Engineering\Project\Proj\ExFitness_Data\Managed\System.Data.dll into Unity Child Domain
+- Completed reload, in  0.152 seconds
+Platform assembly: G:\3'rd Year\Semester 2\Software Engineering\Project\Proj\ExFitness_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: G:\3'rd Year\Semester 2\Software Engineering\Project\Proj\ExFitness_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 3840x1080 at -1920,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 1.874172 ms
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 4.803555 ms
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 327.
+Total: 0.289185 ms (FindLiveObjects: 0.042666 ms CreateObjectMapping: 0.009876 ms MarkObjects: 0.189234 ms  DeleteObjects: 0.046617 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.775901 ms
+
+Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 339.
+Total: 0.455901 ms (FindLiveObjects: 0.029629 ms CreateObjectMapping: 0.020938 ms MarkObjects: 0.273777 ms  DeleteObjects: 0.130370 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.656592 ms
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 327.
+Total: 0.462617 ms (FindLiveObjects: 0.032790 ms CreateObjectMapping: 0.021728 ms MarkObjects: 0.314864 ms  DeleteObjects: 0.092444 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.693728 ms
+
+Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 339.
+Total: 0.491061 ms (FindLiveObjects: 0.032395 ms CreateObjectMapping: 0.021333 ms MarkObjects: 0.336987 ms  DeleteObjects: 0.099160 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.524246 ms
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 449.
+Total: 0.515950 ms (FindLiveObjects: 0.050962 ms CreateObjectMapping: 0.030814 ms MarkObjects: 0.407308 ms  DeleteObjects: 0.026074 ms)
+
+Platform assembly: G:\3'rd Year\Semester 2\Software Engineering\Project\Proj\ExFitness_Data\Managed\System.Transactions.dll (this message is harmless)
+Platform assembly: G:\3'rd Year\Semester 2\Software Engineering\Project\Proj\ExFitness_Data\Managed\System.Xml.dll (this message is harmless)
+1 pepomanz 64 180 M 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+2 Kariz 80 175 M 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+3 Titat 70 179 M 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+4 Khem 60 160 M 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+5 Test1 59 150 M 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+6 Test2 48 160 F 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+7 Test3 100 175 F 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+8 Test4 98 180 F 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+9 Test8 94 178 F 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+10 Test6 82 182 F 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+11 Test7 51 177 F 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+12 Karis_Unity 60 170 M 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+13 xx 50 140 M 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 5.618567 ms
+
+Unloading 59 unused Assets to reduce memory usage. Loaded Objects now: 342.
+Total: 0.598518 ms (FindLiveObjects: 0.071506 ms CreateObjectMapping: 0.032000 ms MarkObjects: 0.438123 ms  DeleteObjects: 0.054913 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.663308 ms
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 461.
+Total: 0.598913 ms (FindLiveObjects: 0.063209 ms CreateObjectMapping: 0.036345 ms MarkObjects: 0.447209 ms  DeleteObjects: 0.051358 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.461728 ms
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 340.
+Total: 0.505283 ms (FindLiveObjects: 0.033580 ms CreateObjectMapping: 0.067950 ms MarkObjects: 0.367407 ms  DeleteObjects: 0.035160 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.413629 ms
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 377.
+Total: 0.320395 ms (FindLiveObjects: 0.023703 ms CreateObjectMapping: 0.011851 ms MarkObjects: 0.269432 ms  DeleteObjects: 0.015012 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.791308 ms
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 343.
+Total: 0.271802 ms (FindLiveObjects: 0.031604 ms CreateObjectMapping: 0.011061 ms MarkObjects: 0.206617 ms  DeleteObjects: 0.022123 ms)
+
+Setting up 4 worker threads for Enlighten.
+  Thread -> id: 2f60 -> priority: 1 
+  Thread -> id: 1c4 -> priority: 1 
+  Thread -> id: 5760 -> priority: 1 
+  Thread -> id: 5764 -> priority: 1 
