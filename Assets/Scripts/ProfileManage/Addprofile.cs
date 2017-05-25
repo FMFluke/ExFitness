@@ -51,7 +51,7 @@ public class Addprofile : MonoBehaviour {
         }
         else
         {
-            CompleteMessage.text = "YOUR ADDING PROFILE COMPLETED !!";
+            CompleteMessage.text = " Your new profile was successfully added !!";
             return 0;
         }
 
